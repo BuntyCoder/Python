@@ -6,7 +6,7 @@ import sys
 class MyApp(QMainWindow):
     def __init__(self):
         super(MyApp, self).__init__()
-        self.setGeometry(400, 400, 300, 300)
+        self.setGeometry(500, 500, 300, 300)
         self.setWindowTitle("Pranav is Great")
         self.initUI()
 
