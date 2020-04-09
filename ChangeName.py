@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QApplication, QMainWindow 
 import sys
 
-
+#main body
 class MyApp(QMainWindow):
     def __init__(self):
         super(MyApp, self).__init__()
