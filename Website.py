@@ -3,6 +3,8 @@ from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
 import sys
 
+#main body
+
 class WebSite(QMainWindow):
     def __init__(self):
         super(WebSite, self).__init__()
