@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'Calci.ui'
-#
-# Created by: PyQt5 UI code generator 5.12.1
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -31,16 +23,17 @@ class Ui_Form(object):
         self.btn_sub = QtWidgets.QPushButton(Form)
         self.btn_sub.setGeometry(QtCore.QRect(196, 281, 80, 25))
         self.btn_sub.setObjectName("btn_sub")
+        self.btn_sub.clicked.connect(self.sub)
         
         self.txt1 = QtWidgets.QLineEdit(Form)
         self.txt1.setGeometry(QtCore.QRect(90, 120, 113, 25))
         self.txt1.setObjectName("txt1")
-        a = self.txt1.text()
+        #a = self.txt1.text()
         
         self.txt2 = QtWidgets.QLineEdit(Form)
         self.txt2.setGeometry(QtCore.QRect(290, 120, 113, 25))
         self.txt2.setObjectName("txt2")
-        b = self.txt2.text()
+        #b = self.txt2.text()
         
 
         self.output = QtWidgets.QLineEdit(Form)
@@ -68,6 +61,11 @@ class Ui_Form(object):
         a = int(self.txt1.text())
         b = int(self.txt2.text())
         self.output.setText(str(a + b))
+
+    def sub(self, Form):
+        a = int(self.txt1.text())
+        b = int(self.txt2.text())
+        self.output.setText(str(a - b))
         
 
 
